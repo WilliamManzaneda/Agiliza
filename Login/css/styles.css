@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#login-section,
+#image-section {
+    flex: 1;
+}
+
+#login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+
+#login-section h2,
+#login-section p {
+    display: inline-block; /* Torna o título e a mensagem em linha */
+    margin-right: 10px; /* Adiciona um pequeno espaço entre o título e a mensagem */
+    color: #092533;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: #555;
+    pointer-events: none;
+    transition: top 0.3s, left 0.3s, font-size 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+button {
+    background-color: #092533;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+#register-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#register-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#image-section {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

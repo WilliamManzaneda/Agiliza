@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            font-size: 50px;
+            color: black;
+        }
+
+        h2 {
+            position: absolute;
+            top: 150px;
+            left: 250px;
+            font-size: 50px;
+            color: black;
+        }
+
+        p {
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            font-size: 30px;
+            color: black;
+            max-width: 400px;
+        }
+
+        h3 {
+            position: absolute;
+            top: 650px;
+            left: 800px;
+            font-size: 50px;
+            color: black;
+        }
+
+        p.jornada {
+            position: absolute;
+            top: 750px;
+            left: 800px;
+            font-size: 32px;
+            color: black;
+            max-width: 400px;
+        }
+
+        #equipe {
+            position: absolute;
+            top: 1650px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+
+        #banner {
+            height: 690px;
+            width: 1600px;
+        }
+
+        #ellipse {
+            position: absolute;
+            top: 150px;
+            right: 180px;
+        }
+
+        /* Adicione um novo bloco de estilo para a cor de fundo */
+        #cor-de-fundo {
+            position: absolute;
+            top: 1620px;
+            right:0px; /* Posição igual à #ellipse */
+            background-color: #EFFEFF; /* Cor de fundo desejada */
+            width: 2000px; /* Ajuste a largura conforme necessário */
+            height: 1600px; /* Ajuste a altura conforme necessário */
+            z-index: -1; /* Para garantir que fique atrás das outras imagens e textos */
+        }
+
+        #ameba {
+            position: absolute;
+            top: 100px;
+            right: 70px;
+        }
+
+        #medica {
+            position: absolute;
+            top: 90px;
+            right: 225px;
+        }
+
+        #foto {
+            position: absolute;
+            top: 750px;
+            left: 100px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: bold;
+            align-items: center;
+            color: #000;
+            background-color: #ffffff;
+            padding: 10px;
+            z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
+        }
+
+        .navlinks {
+            list-style: none;
+            display: flex;
+        }
+
+        .navlinks > li:hover {
+            transform: scale(1.3);
+            transition: all 0.5s;
+        }
+
+        .navlinks > li {
+            transition: all 1s;
+        }
+
+        .navlinks > li > a {
+            color: #000;
+            text-decoration: none;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .navlinks > li > a:hover {
+            color: #FF7038;
+        }
+
+        .btlogin,
+        .btcadastro {
+            font-family: 'Poppins', sans-serif;
+            padding: 8px 20px;
+            font-size: larger;
+            font-weight: bolder;
+            border-radius: 4px;
+            transition: 1s;
+        }
+
+        .btlogin:hover {
+            background-color: #092533;
+            color: #ffffff;
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+
+        .btcadastro:hover {
+            background-color: #ffffff;
+            color: #092533;
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+
+        #ciano {
+            position: absolute;
+            top: 1650px;
+            height: 1500px;
+        }
+
+        #ellipse1 {
+            position: absolute;
+            top: 1850px;
+            right: 1050px;
+        }
+
+        #ellipse2 {
+            position: absolute;
+            top: 1850px;
+            right: 650px;
+        }
+
+        #ellipse3 {
+            position: absolute;
+            top: 1850px;
+            right: 250px;
+        }
+
+        #ellipse6 {
+            position: absolute;
+            top: 2250px;
+            right: 250px;
+        }
+
+        #ellipse5 {
+            position: absolute;
+            top: 2250px;
+            right: 650px;
+        }
+
+        #ellipse4 {
+            position: absolute;
+            top: 2250px;
+            right: 1050px;
+        }
+
+        #Nossaequipe {
+            position: absolute;
+            top: 1650px;
+            right: 620px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><img src="img/Logo.png" alt="image" height="88px" /></div>
+        <div class="links">
+            <ul class="navlinks">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Saiba mais</a></li>
+            </ul>
+        </div>
+        <div class="botao">
+            <button class="btlogin" href="https://www.google.com.br/">Login</button>
+            <button class="btcadastro" href="https://www.google.com.br/">Cadastro</button>
+        </div>
+    </nav>
+
+    <img id="banner" src="img/Banner.png" alt="Banner">
+    <h1>Somos o Agiliza,</h1>
+    <h2>Em prol da saúde</h2>
+    <p>Sabe aqueles dias agitados que mal conseguimos ter uma pausa? Faça o Agendamento da sua consulta diretamente na nossa plataforma sem enfrentar filas, de forma rápida.</p>
+    <img id="ellipse" src="img/Ellipse 414.png" alt="Ellipse">
+
+    <!-- Adicione o bloco de cor de fundo -->
+    <div id="cor-de-fundo"></div>
+
+    <img id="ameba" src="img/Ameba.png" alt="Ameba">
+    <img id="medica" src="img/Medica.png" alt="medica">
+    <img id="foto" src="img/Foto.png" alt="foto">
+    <h3>Nossa Jornada</h3>
+    <p class="jornada">Iniciamos nossa jornada em 2023 quando, durante uma conversa com nossa professora no Demo Day, percebemos a necessidade que a área da saúde tem de ter atendimentos mais rápidos. Decidimos então começar pelas UBS e, no futuro, queremos alcançar os hospitais, reduzindo suas filas com a nossa plataforma: AGILIZA.</p>
+
+    <img id="Nossaequipe" src="img/Nossa equipe.png" alt="nossaequipe">
+    <img id="ellipse1" src="img/Ellipse 1.png" alt="Lucas">
+    <img id="ellipse2" src="img/Ellipse 2.png" alt="Alessandra">
+    <img id="ellipse3" src="img/Ellipse 3.png" alt="Giovanni">
+    <img id="ellipse4" src="img/Ellipse 6.png" alt="Joao">
+    <img id="ellipse5" src="img/Ellipse 5.png" alt="Sara">
+    <img id="ellipse6" src="img/Ellipse 4.png" alt="William">
+
+</body>
+
+</html>
